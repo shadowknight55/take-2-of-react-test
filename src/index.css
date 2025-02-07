@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -9,7 +7,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #2e2e2e; /* Changed background color to dark grey */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,9 +27,12 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
   min-width: 320px;
   min-height: 100vh;
+  background-color: #2e2e2e; /* Ensure body background matches root */
+  padding: 1rem; /* Added padding for even spacing */
 }
 
 h1 {
@@ -48,10 +49,11 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
+  background-color: #2a2a2a; /* Added background color change on hover */
 }
 button:focus,
 button:focus-visible {
